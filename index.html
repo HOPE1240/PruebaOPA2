@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software para escalar un risco</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h1 class="mb-4">Determinador de Elementos para Escalar un Risco</h1>
+  <form method="post" action="buscar_elementos.php">
+    <div class="mb-3">
+      <label for="minCalories" class="form-label">Mínimo de calorías requeridas:</label>
+      <input type="number" class="form-control" id="minCalories" name="minCalories" placeholder="Ingrese el mínimo de calorías requeridas (ej. 10)" max="1000">
+    </div>
+    <div class="mb-3">
+      <label for="maxWeight" class="form-label">Peso máximo que puede llevar (en kg):</label>
+      <input type="number" class="form-control" id="maxWeight" name="maxWeight" placeholder="Ingrese el peso máximo que puede llevar (ej. 15)" max="50">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar Elementos Óptimos</button>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
